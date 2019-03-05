@@ -1,4 +1,4 @@
-- hosts: all
+---
   gather_facts: False
   vars_prompt:
     - name: "Version"
