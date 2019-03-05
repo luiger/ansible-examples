@@ -5,7 +5,7 @@
     state: present
   
 - name: Preguntar
-   vars_prompt:
+  vars_prompt:
     - name: "name"
       prompt: "what is your name?"
     
