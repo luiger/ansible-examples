@@ -1,11 +1,14 @@
 ---
-- name: Install Java 1.7 and some basic dependencies
-  yum: 
-    name: ['unzip', 'java-1.7.0-openjdk', 'libselinux-python', 'libsemanage-python']
-    state: present
-  
-- name: Preguntar
+- hosts: all
+  remote_user: root
+
+  vars:
+    from: "camelot"
+
   vars_prompt:
     - name: "name"
       prompt: "what is your name?"
-    
+    - name: "quest"
+      prompt: "what is your quest?"
+    - name: "favcolor"
+      prompt: "what is your favorite color?"
